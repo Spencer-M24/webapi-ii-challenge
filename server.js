@@ -1,6 +1,6 @@
-import moduels locations etc
-express and json data 
-router js connection file 
+// import moduels locations etc
+// express and json data 
+// router js connection file 
 
 // Stretch Problems
 // To work on the stretch problems you'll need to enable the cors middleware. Follow these steps:
