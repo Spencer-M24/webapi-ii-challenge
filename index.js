@@ -8,3 +8,17 @@ const server = express ();
 server.use(express.json());
 
 
+
+server.get('/api/posts',  (req, res) => {
+    db.find()
+        .then(posts => {
+            res.status(200).json(posts);
+        })
+        .catch(err => {
+            res.status(500).res.json({ error: 'The posts information could not be retrieved'})
+        })
+})
+
+
+server.get('/api/posts/:id',  (req, res) => {
+    const id = req.params.id;
